@@ -11,6 +11,8 @@ if ($process) {
     Write-Output "Process $processName is not running."
 }
 
+start-sleep -seconds 10
+
 # Start the process
 Start-Process -FilePath $processPath
 Write-Output "Process $processName has been started from $processPath."
